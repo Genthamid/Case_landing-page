@@ -13,48 +13,26 @@
     width: 100%;
     height: 100dvh;
     background-color: #F4B360;
+    position: relative;
+    z-index: 1;
     
 }
 
+.ellipse{
+    max-width: 84%;
+    position: absolute;
+    left: calc(10% + 10px);
+    z-index: 2;
+}
+
+.ellipse img{
+    max-width: 100%;
+}
+
 header{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding: 20px 10px 0 10px;
-}
-
-.case-logo{
-
-    width: 100px;
-    height: 100px;
-}
-.case-logo img {
-    width: 100px;
-    height: 100px;
-    color: #ffff;
-    background-color: red;
-}
-
-nav ul {
-    display: flex;
-    gap: 70px;
-}
-
-nav ul li{
-    list-style: none;
-}
-nav ul li a{
-    text-decoration: none;
-    color:#ffff ;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.hero .get-started{
-    min-width: 150px;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
-    background-color: #ffff;
-    color: #F4B360;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    border: 2px solid red;
+    z-index: 3;
 }

@@ -12,114 +12,28 @@ html {
   font-family: "poppins", sans-serif;
 }
 
-/* .hero{
+body {
+  width: 100%;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.grid-container .hero-container{
     width: 100%;
-    height: 100dvh;
-    background: url(assets/Desktop\ -\ 2.png) no-repeat; 
-    background-position: center ;
-    background-size: contain;
-    position: relative;
-    bottom: 200px;  
-    display: flex;
-    flex-direction: column;
+    background-color: #f4b360;
 }
 
-header{
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-header .logo{
-    width: 150px;
-    margin-left: 30px;
-    margin-top: 15px;
-}
-
-header .logo img{
-    max-width: 100%;
-}
-
-header .links {
-    width: 20%;
-    font-weight: 550;
-    gap: 10px;
-    font-size: 1.2rem;
-}
-header .links ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-header .links ul li{
-    display: inline-block;    
-}
-
-header .links ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.the-button{
-    width: 15%;
-    height: 50%;
-    background-color: #ffffff;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12.5px;
-}
-
-.the-button a{
-    text-decoration: none;
-    color: #f4b360;
-    font-weight: bold;
-}
-
-.hero-content{
-    width: 100%;
-    height: 80%;
-    border: 2px solid purple;
-    position: relative;
-    top: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero-content .picture{
-    width: 50%;
-}
-
-.hero-content .picture img{
-    max-width: 100%;
-}
-
-
-@media  (max-width: 550px){
-    header{
-        display: block;
-    }
-} */
-
-header {
+.hero-container header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 15px 20px 0 20px;
-  background-color: #f4b360;
 }
 
 .nav-list nav ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 80px;
 }
 
@@ -164,8 +78,29 @@ nav ul li a:hover::after {
   color: #f4b360;
 }
 
-.get-started-btn button:hover{
-    cursor: pointer;
+.get-started-btn button:hover {
+  cursor: pointer;
+}
+
+.header-img-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-img-container .upload-text {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+  background-color: #f4b360;
+  color: #ffff;
+}
+
+.header-img-container .main-iphone-image img {
+  width: 90%;
+  height: 550px;
 }
 
 .main {
@@ -176,13 +111,6 @@ nav ul li a:hover::after {
   background-color: #ffff;
 }
 
-.main .upload-text {
-  text-align: center;
-  padding: 50px 0;
-  font-size: 2rem;
-  background-color: #f4b360;
-  color: #ffff;
-}
 .main .features-text {
   text-align: center;
   padding: 80px 0;
@@ -190,10 +118,10 @@ nav ul li a:hover::after {
 }
 
 .main .main-iphone-image {
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
-  background-color: #f4b360;
+  align-items: center;
 }
 
 .main .main-iphone-image img {
@@ -278,6 +206,8 @@ nav ul li a:hover::after {
   color: #ffa83d;
 }
 
-@media (max-width:1100px) {
-    
+@media screen and (max-width: 1100px) {
+  .grid-container header {
+    width: 100%;
+  }
 }

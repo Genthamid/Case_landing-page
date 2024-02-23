@@ -1,19 +1,18 @@
-:root{
-    --main-colour: #f4b360;
-    --main-font: 'Poppins'
+:root {
+  --main-colour: #f4b360;
+  --main-font: "Poppins";
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: 'poppins', sans-serif;
-    background-color: #f4b360;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero{
+html {
+  font-family: "poppins", sans-serif;
+}
+
+/* .hero{
     width: 100%;
     height: 100dvh;
     background: url(assets/Desktop\ -\ 2.png) no-repeat; 
@@ -104,6 +103,181 @@ header .links ul li a{
 }
 
 
-@media  (min-width: 550px){
-    display: ;
+@media  (max-width: 550px){
+    header{
+        display: block;
+    }
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px 0 20px;
+  background-color: #f4b360;
+}
+
+.nav-list nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.nav-list nav ul li {
+  list-style: none;
+}
+
+.nav-list nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+nav ul li a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.get-started-btn button {
+  width: 150px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f4b360;
+}
+
+.get-started-btn button:hover{
+    cursor: pointer;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffff;
+}
+
+.main .upload-text {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+  background-color: #f4b360;
+  color: #ffff;
+}
+.main .features-text {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 2rem;
+}
+
+.main .main-iphone-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f4b360;
+}
+
+.main .main-iphone-image img {
+  max-width: 50%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.features-container {
+  display: flex;
+  gap: 320px;
+}
+
+.features-container .left,
+.right {
+  width: 380px;
+  height: 210px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f4b36080;
+  padding: 30px 40px;
+}
+
+.features-container .left h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffa83d;
+}
+.features-container .right h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffa83d;
+}
+
+.features-container .left .text {
+  font-size: 22px;
+}
+.features-container .right .text {
+  font-size: 22px;
+}
+
+.features-image {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  position: absolute;
+  top: 118%;
+}
+.features-image img {
+  max-width: 23%;
+}
+
+.features-bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 320px;
+  padding: 80px 50px 10px 50px;
+}
+
+.features-bottom-container .left h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffa83d;
+}
+.features-bottom-container .right h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffa83d;
+}
+
+@media (max-width:1100px) {
+    
 }
